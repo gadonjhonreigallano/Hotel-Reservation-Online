@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Reservations Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  /* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 50px;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.room {
+    margin-bottom: 30px;
+}
+
+.room img {
+    width: 100%;
+    height: auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+a{
+ color: white;
+}
+
+</style>
+<body>
+    <header>
+        <h1>Welcome to Hotel Reservations Online</h1>
+        <nav>
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Discover Your Perfect Getaway</h2>
+        <p>Experience luxury and comfort at our exquisite hotels. Book your stay now!</p>
+        <a href="" class="btn">Book Now</a>
+    </section>
+
+    <section id="rooms">
+        <h2>Our Rooms</h2>
+        <div class="room">
+            <img src="/Hotel Reservations Web.com/Sample.jpg" alt="Room 1">
+            <h3>Deluxe Suite</h3>
+            <p>Spacious suite with stunning views and modern amenities.</p>
+            <a href="#booking" class="btn">Book Now</a>
+        </div>
+        <div class="room">
+            <img src="/Hotel Reservations Web.com/Sample.jpg" alt="Room 2">
+            <h3>Executive Room</h3>
+            <p>Elegant room with comfortable furnishings and a relaxing ambiance.</p>
+            <a href="#booking" class="btn">Book Now</a>
+        </div>
+        <div class="room">
+            <img src="/Hotel Reservations Web.com/Sample.jpg" alt="Room 3">
+            <h3>Standard Room</h3>
+            <p>Cozy room perfect for a comfortable stay at an affordable price.</p>
+            <a href="#booking" class="btn">Book Now</a>
+        </div>
+    </section>
+
+    <section id="booking">
+        <h2>Make a Reservation</h2>
+        <form>
+            <label for="check-in">Check-in Date:</label>
+            <input type="date" id="check-in" name="check-in" required>
+            <label for="check-out">Check-out Date:</label>
+            <input type="date" id="check-out" name="check-out" required>
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" required>
+            <button type="submit" class="btn"><a href="/Hotel Reservations Web.com/Booked.html">Book Now</a></button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have any questions or need assistance? Reach out to our friendly staff.</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2022 Hotel Reservations Online. All rights reserved.</p>
+    </footer>
+</body>
+</html>
